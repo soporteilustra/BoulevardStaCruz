@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo|Raleway:300');
+body {
+  background: #fff;
+  color: #212121;
+}
+body.inverse {
+  background: #000;
+  color: #fff;
+}
+.main-side {
+  padding: 0.5em;
+  position: fixed;
+  height: 100vh;
+}
+.main-side::after {
+  content: ' ';
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  z-index: -1;
+  border-right: 2px solid #00838F;
+}
+.main-side .icon-menu {
+  padding: 0.5em;
+}
+.main-side .icon-menu i {
+  font-size: 1.3rem;
+}
+.main-side .brand {
+  text-align: center;
+  padding: 0.5em;
+}
+.main-side .desc h3 {
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'Macondo', sans-serif;
+  padding: 0.2rem;
+}
+.main-side .desc h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  text-align: center;
+}
+.main-side .menu {
+  padding: 1em 0em;
+}
+.main-side .menu ul {
+  list-style: none;
+  padding: 0;
+}
+.main-side .menu ul li {
+  padding: 0.4em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+.main-side .menu ul li i {
+  margin-right: 0.5em;
+  width: 40px;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 0.3em;
+  text-align: center;
+}
+.main-side .menu ul li i:hover {
+  color: #fff !important;
+}
+.items-side {
+  padding: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.items-side .item {
+  /*margin-bottom: 1em;*/
+  text-align: center;
+  border: 0px solid #E0e0e0;
+  border-radius: 0px;
+  height: 250px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.items-side .item:hover {
+  transform: rotateY(180deg);
+}
+.items-side .item .front {
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.items-side .item:hover .front {
+  opacity: 0;
+}
+.items-side .item .back {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+.items-side .item:hover .back {
+  opacity: 1;
+}
+.items-side .item .tag {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  color: #fff;
+  padding: 0.1em 1.5em;
+}
+/*.items-side .item .tag::after {
+  position: absolute;
+  top: -10px;
+  content: ' ';
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  z-index: -1;
+}*/
+.items-side .item .tag i {
+  font-size: 1.5em;
+}
+.items-side .item .card-block img {
+  margin-bottom: 0.9em;
+}
+.list-desc {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.list-desc li {
+  margin: 0.2em;
+  font-size: .9em;
+}
+.list-desc li i {
+  text-align: center;
+  display: inline-block;
+  width: 30px;
+  font-size: 1.2em;
+  margin-right: 0.4em;
+  color: #fff;
+}
+/* Responsive */
+.header-top {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.header-top .branded img {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+.header-top .branded h4 {
+  display: inline-block;
+  width: auto;
+  font-family: 'Macondo', sans-serif;
+  font-size: 2em;
+}
+.header-top .branded h4 small {
+  font-size: .6em;
+  color: #626262;
+}
+/* Colours */
+.bg-bar {
+  background: #E91E63;
+}
+.items-side .item .tag.bg-bar::after {
+  border-left: 5px solid #D81B60;
+  border-bottom: 5px solid #D81B60;
+}
+.bg-restaurant {
+  background: #FF9800;
+}
+.items-side .item .tag.bg-warning::after {
+  border-left: 5px solid #D69B46;
+  border-bottom: 5px solid #D69B46;
+}
+.items-side .item .tag.bg-primary::after {
+  border-left: 5px solid #3949AB;
+  border-bottom: 5px solid #3949AB;
+}
+.items-side .item-content {
+  padding: 0;
+}
+
+.bg-shop {
+  background: #3F51B5;
+}
+.bg-local {
+  background: #D32F2F;
+}
+.bg-phone {
+  background: #8BC34A;
+}
+.bg-movil {
+  background: #FFC107;
+}
+.bg-mail {
+  background: #FF5722;
+}
