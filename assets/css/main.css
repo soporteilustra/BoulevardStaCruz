@@ -125,7 +125,7 @@ body.inverse {
   top: 15px;
   right: 0px;
   color: #fff;
-  padding: 0.1em 1.5em;
+  padding: 0.3em 1.5em;
 }
 /*.items-side .item .tag::after {
   position: absolute;
@@ -139,7 +139,7 @@ body.inverse {
   z-index: -1;
 }*/
 .items-side .item .tag i {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 .items-side .item .card-block img {
   margin-bottom: 0.9em;
